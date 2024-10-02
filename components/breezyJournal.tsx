@@ -64,7 +64,7 @@ const DailyJournal: React.FC = () => {
 
   const handleCelebrate = useCallback(() => {
     setIsCelebrating(true);
-    setTimeout(() => setIsCelebrating(false), 5000); // Stop confetti after 5 seconds
+    setTimeout(() => setIsCelebrating(false), 5000);
   }, []);
 
   return (
@@ -72,7 +72,7 @@ const DailyJournal: React.FC = () => {
       {isCelebrating && <ReactConfetti />}
       <div className="max-w-6xl mx-auto">
         <header className="flex justify-between items-center mb-12">
-          <h1 className={`text-3xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Daily Journal</h1>
+          <h1 className="text-3xl font-bold">Daily Journal</h1>
           <div className="flex space-x-4 items-center">
             <button
               className={`p-2 rounded-full ${theme === 'dark' ? 'bg-yellow-400 text-gray-900' : 'bg-gray-200 text-gray-900'}`}
@@ -91,9 +91,7 @@ const DailyJournal: React.FC = () => {
 
         <main>
           <div className="mb-16">
-            <h2 className={`text-2xl font-semibold mb-8 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-              Today, {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}
-            </h2>
+            <h2 className="text-2xl font-semibold mb-8">Today, {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
               {actionButtons.map((button, index) => (
                 <ActionButton key={index} {...button} onClick={() => handleButtonClick(button.title)} />
@@ -102,7 +100,7 @@ const DailyJournal: React.FC = () => {
           </div>
 
           <div className="mb-8">
-            <h2 className={`text-2xl font-semibold mb-8 text-center ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Journal Feed</h2>
+            <h2 className="text-2xl font-semibold mb-8 text-center">Journal Feed</h2>
             <JournalFeed 
               entries={journalEntries} 
               onDelete={handleDeleteEntry} 
