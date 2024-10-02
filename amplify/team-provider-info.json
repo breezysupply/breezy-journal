@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-breezyjournal-dev-6fb94-authRole",
+      "UnauthRoleArn": "arn:aws:iam::513842324004:role/amplify-breezyjournal-dev-6fb94-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::513842324004:role/amplify-breezyjournal-dev-6fb94-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-breezyjournal-dev-6fb94-deployment",
+      "UnauthRoleName": "amplify-breezyjournal-dev-6fb94-unauthRole",
+      "StackName": "amplify-breezyjournal-dev-6fb94",
+      "StackId": "arn:aws:cloudformation:us-east-1:513842324004:stack/amplify-breezyjournal-dev-6fb94/c102e0d0-80d7-11ef-902d-0affe284ac29",
+      "AmplifyAppId": "d3cwino0sm1zk"
+    },
+    "categories": {
+      "auth": {
+        "breezyjournal2ad157b9": {}
+      },
+      "api": {
+        "breezyjournal": {}
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import './globals.css'
+import { Providers } from './providers'
 import { ThemeProvider } from '../components/ThemeContext'
 
 export default function RootLayout({
@@ -9,7 +10,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Providers>{children}</Providers>
+        </ThemeProvider>
       </body>
     </html>
   )

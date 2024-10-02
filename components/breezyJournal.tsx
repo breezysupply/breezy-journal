@@ -109,7 +109,6 @@ const DailyJournal: React.FC = () => {
           </div>
         </main>
 
-        {/* Floating Celebrate button */}
         <button
           className={`fixed bottom-8 right-8 p-4 rounded-full shadow-lg transition-colors duration-200 ${
             isCelebrating ? 'bg-purple-500' : 'bg-yellow-400'
