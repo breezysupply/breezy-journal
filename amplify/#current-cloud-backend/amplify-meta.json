@@ -1,0 +1,83 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-breezyjournal-dev-6fb94-authRole",
+      "UnauthRoleArn": "arn:aws:iam::513842324004:role/amplify-breezyjournal-dev-6fb94-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::513842324004:role/amplify-breezyjournal-dev-6fb94-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-breezyjournal-dev-6fb94-deployment",
+      "UnauthRoleName": "amplify-breezyjournal-dev-6fb94-unauthRole",
+      "StackName": "amplify-breezyjournal-dev-6fb94",
+      "StackId": "arn:aws:cloudformation:us-east-1:513842324004:stack/amplify-breezyjournal-dev-6fb94/c102e0d0-80d7-11ef-902d-0affe284ac29",
+      "AmplifyAppId": "d3cwino0sm1zk"
+    }
+  },
+  "auth": {
+    "breezyjournal2ad157b9": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-breezyjournal-dev-6fb94-deployment/amplify-cfn-templates/auth/breezyjournal2ad157b9-cloudformation-template.json",
+        "logicalId": "authbreezyjournal2ad157b9"
+      },
+      "lastPushTimeStamp": "2024-10-02T16:06:17.687Z",
+      "output": {
+        "UserPoolId": "us-east-1_Sj6kz4JsJ",
+        "AppClientIDWeb": "2oi858h9bcl5jjo9d0711cp2co",
+        "AppClientID": "2ra4mm6llt0602au699n6vue3h",
+        "IdentityPoolId": "us-east-1:d844f16b-b8e0-47ae-8327-a788e9bbf74c",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:513842324004:userpool/us-east-1_Sj6kz4JsJ",
+        "IdentityPoolName": "breezyjournal2ad157b9_identitypool_2ad157b9__dev",
+        "UserPoolName": "breezyjournal2ad157b9_userpool_2ad157b9"
+      },
+      "lastPushDirHash": "0S8KSTwJ1NMAHmdFXYCso8nzWO4="
+    }
+  },
+  "api": {
+    "breezyjournal": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "oumakq2ymfbsnly7imikm6ssju",
+        "GraphQLAPIEndpointOutput": "https://xm6w4bl4mndmtji4ixo5j4oqoe.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-mzqqkzd6wzawvpbgcq3jod7jkq"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-breezyjournal-dev-6fb94-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apibreezyjournal"
+      },
+      "lastPushTimeStamp": "2024-10-02T16:06:17.687Z",
+      "lastPushDirHash": "63YtSqqvPVX7q3rpt/g/C9M0YD0="
+    }
+  }
+}

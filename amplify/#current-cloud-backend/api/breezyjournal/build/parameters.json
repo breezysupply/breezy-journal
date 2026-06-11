@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "breezyjournal",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-breezyjournal-dev-6fb94-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/6e46eb09c262fde24fa4c9f33048caa81429dc12"
+}
